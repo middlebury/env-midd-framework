@@ -1,11 +1,17 @@
 {
-  "name": "env-midd-chart",
+  "name": "env-midd-framework",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "devDependencies": {
+  "dependencies": {
+    "autoprefixer": "^7.2.4",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.4.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   }
 }
