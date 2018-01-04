@@ -11,7 +11,13 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {
+        "grid": true,
+        "browsers": [
+          ">2%",
+          "last 4 versions"
+        ]
+      }
     }
   }
 }
