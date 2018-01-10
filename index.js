@@ -2,9 +2,7 @@ import './index.scss';
 (function() {
   // set up background hovers to highlight related explainer item
   var legend = document.querySelector('.legend');
-  var zones = document.querySelectorAll(
-    '.mission-bg, .directions-bg, .distinctions-bg, .principles-item'
-  );
+  var zones = document.querySelectorAll('[data-zone]');
 
   function disableActiveLegendItem() {
     var activeItem = document.querySelector('.legend-item.active');
