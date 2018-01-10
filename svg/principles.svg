@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="81px" viewBox="0 0 80 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>principles</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Middlebury_FrameworkWeb_V2" transform="translate(-2221.000000, -1180.000000)" fill-rule="nonzero">
+            <g id="content">
+                <g id="principles" transform="translate(2221.000000, 1180.000000)">
+                    <g id="Group" transform="translate(3.000000, 4.000000)" fill="#F2F2F2">
+                        <circle id="Oval" cx="37" cy="36.6" r="36.6"></circle>
+                    </g>
+                    <circle id="Oval" fill="#E5E5E4" cx="39.9" cy="40.6" r="24.7"></circle>
+                    <g id="Group" opacity="0.9" transform="translate(11.000000, 12.000000)" fill="#00AAAB">
+                        <g id="Rectangle-path">
+                            <rect transform="translate(12.381515, 12.235035) rotate(-45.000000) translate(-12.381515, -12.235035) " x="9.38154377" y="-1.51483314" width="5.99994246" height="27.4997363"></rect>
+                            <rect transform="translate(45.613685, 12.206635) rotate(45.000000) translate(-45.613685, -12.206635) " x="42.6137138" y="-1.54323314" width="5.99994246" height="27.4997363"></rect>
+                        </g>
+                        <g transform="translate(0.000000, 32.000000)" id="Rectangle-path">
+                            <rect transform="translate(45.398335, 12.832895) rotate(135.000000) translate(-45.398335, -12.832895) " x="42.3983638" y="-0.916973137" width="5.99994246" height="27.4997363"></rect>
+                            <rect transform="translate(12.050325, 12.859955) rotate(-135.000000) translate(-12.050325, -12.859955) " x="9.05035377" y="-0.889913137" width="5.99994246" height="27.4997363"></rect>
+                        </g>
+                    </g>
+                    <circle id="Oval" fill="#FFFFFF" cx="39.9" cy="40.6" r="10.7"></circle>
+                    <path d="M40,4 C60.2,4 76.6,20.4 76.6,40.6 C76.6,60.8 60.2,77.2 40,77.2 C19.8,77.2 3.4,60.8 3.4,40.6 C3.4,20.4 19.8,4 40,4 Z M40,0.6 C34.6,0.6 29.4,1.7 24.4,3.7 C19.6,5.7 15.4,8.6 11.7,12.3 C8,16 5.2,20.2 3.1,25 C1,29.9 -1.13686838e-13,35.2 -1.13686838e-13,40.6 C-1.13686838e-13,46 1.1,51.2 3.1,56.2 C5.1,61 8,65.2 11.7,68.9 C15.4,72.6 19.6,75.4 24.4,77.5 C29.3,79.6 34.6,80.6 40,80.6 C45.4,80.6 50.6,79.5 55.6,77.5 C60.4,75.5 64.6,72.6 68.3,68.9 C72,65.2 74.8,61 76.9,56.2 C79,51.3 80,46 80,40.6 C80,35.2 78.9,30 76.9,25 C74.9,20.2 72,16 68.3,12.3 C64.6,8.6 60.4,5.8 55.6,3.7 C50.6,1.7 45.4,0.6 40,0.6 Z" id="Shape" fill="#E5E5E4" opacity="0.9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

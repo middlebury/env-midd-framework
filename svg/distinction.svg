@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="81px" viewBox="0 0 80 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>distinction</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-4.17705309%" y1="55.9383744%" x2="104.242872%" y2="44.0675775%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.9811701%" y1="-3.99872693%" x2="55.8518837%" y2="104.420437%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="103.968771%" y1="44.2983503%" x2="-4.45039305%" y2="56.1690639%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="55.7773167%" y1="104.305569%" x2="43.9065614%" y2="-4.11397549%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Middlebury_FrameworkWeb_V2" transform="translate(-2221.000000, -976.000000)" fill-rule="nonzero">
+            <g id="content">
+                <g id="distinction" transform="translate(2221.000000, 976.000000)">
+                    <circle id="Oval" fill="#F2F2F2" cx="40" cy="40.1" r="36.6"></circle>
+                    <circle id="Oval" fill="#005A97" cx="39.9" cy="40.1" r="24.7"></circle>
+                    <g id="Group" opacity="0.9" transform="translate(11.000000, 11.000000)">
+                        <g id="Shape">
+                            <polygon fill="url(#linearGradient-1)" points="24.2 20.3 20 24.6 0.5 5.2 4.8 0.9"></polygon>
+                            <polygon fill="url(#linearGradient-2)" points="38.1 24.6 33.8 20.3 53.2 0.9 57.5 5.2"></polygon>
+                        </g>
+                        <g transform="translate(0.000000, 33.000000)" id="Shape">
+                            <polygon fill="url(#linearGradient-3)" points="33.5 4.8 37.8 0.5 57.2 20 52.9 24.2"></polygon>
+                            <polygon fill="url(#linearGradient-4)" points="19.7 0.5 23.9 4.8 4.5 24.2 0.2 20"></polygon>
+                        </g>
+                    </g>
+                    <circle id="Oval" fill="#FFFFFF" cx="39.9" cy="40.1" r="10.7"></circle>
+                    <path d="M40,3.5 C60.2,3.5 76.6,19.9 76.6,40.1 C76.6,60.3 60.2,76.7 40,76.7 C19.8,76.7 3.4,60.3 3.4,40.1 C3.4,19.9 19.8,3.5 40,3.5 Z M40,0.1 C34.6,0.1 29.4,1.2 24.4,3.2 C19.6,5.2 15.4,8.1 11.7,11.8 C8,15.5 5.2,19.7 3.1,24.5 C1,29.4 -1.13686838e-13,34.7 -1.13686838e-13,40.1 C-1.13686838e-13,45.5 1.1,50.7 3.1,55.7 C5.1,60.5 8,64.7 11.7,68.4 C15.4,72.1 19.6,74.9 24.4,77 C29.3,79.1 34.6,80.1 40,80.1 C45.4,80.1 50.6,79 55.6,77 C60.4,75 64.6,72.1 68.3,68.4 C72,64.7 74.8,60.5 76.9,55.7 C79,50.8 80,45.5 80,40.1 C80,34.7 78.9,29.5 76.9,24.5 C74.9,19.7 72,15.5 68.3,11.8 C64.6,8.1 60.4,5.3 55.6,3.2 C50.6,1.2 45.4,0.1 40,0.1 Z" id="Shape" fill="#E5E5E4" opacity="0.9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
