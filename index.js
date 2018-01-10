@@ -98,7 +98,10 @@ import './index.scss';
   }
 
   function handleItemClick(e) {
+    e.preventDefault();
+
     var elem = e.target;
+
     openModal(elem);
   }
 
@@ -108,6 +111,8 @@ import './index.scss';
   });
 
   function handleNextClick(event) {
+    event.preventDefault();
+
     var activeItem = getActiveItem();
 
     if (!activeItem) {
@@ -133,6 +138,8 @@ import './index.scss';
   }
 
   function handlePrevClick(event) {
+    event.preventDefault();
+
     var activeItem = getActiveItem();
 
     if (!activeItem) {
@@ -158,6 +165,7 @@ import './index.scss';
   }
 
   function handleCloseClick(event) {
+    event.preventDefault();
     closeModal();
   }
 
