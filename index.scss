@@ -32,9 +32,10 @@ ul {
   list-style-type: none;
 }
 
-a {
-  color: currentColor;
+.framework a {
+  color: $white;
   text-decoration: none;
+  pointer-events: auto;
   &:hover {
     text-decoration: underline;
   }
@@ -219,10 +220,6 @@ $principles-item-padding: 30%;
   padding-left: 2rem;
   padding-right: 2rem;
   position: relative;
-
-  a {
-    pointer-events: all;
-  }
   align-self: center;
 
   &:nth-child(1) {
@@ -278,10 +275,6 @@ $principles-item-padding: 30%;
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
-
-  a {
-    pointer-events: all;
-  }
   align-self: center;
 
   &:nth-child(1) {
