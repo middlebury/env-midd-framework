@@ -335,15 +335,23 @@ $principles-item-padding: 30%;
 }
 
 .legend-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 1rem;
   margin-bottom: 2rem;
   transition: opacity 0.5s;
+  display: flex;
+  align-items: flex-start;
 
   &.active {
     opacity: 1 !important;
   }
+}
+
+.legend-item-icon {
+}
+
+.legend-item-body {
+  flex: 1;
+  // max-width: 100%;
+  padding-left: 1rem;
 }
 
 .legend-item-title {
@@ -356,7 +364,8 @@ $principles-item-padding: 30%;
   margin-bottom: 1rem;
 }
 
-.legend-item-body {
+.legend-item-text {
+  font-size: 14px;
 }
 
 .modal {
