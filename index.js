@@ -1,4 +1,7 @@
 import './index.scss';
+
+import closest from 'dom-closest';
+
 (function() {
   // set up background hovers to highlight related explainer item
   var legend = document.querySelector('.legend');
@@ -84,7 +87,7 @@ import './index.scss';
   }
 
   function getItemValues(elem) {
-    var titleElem = elem.closest('[data-title]');
+    var titleElem = closest(elem, '[data-title]');
 
     var tag = titleElem.getAttribute('data-title');
     var title = elem.innerText;
@@ -125,7 +128,7 @@ import './index.scss';
     var nextElem = parent.nextElementSibling;
 
     if (!nextElem) {
-      nextElem = parent.closest('[data-title]').firstElementChild;
+      nextElem = closest(parent, '[data-title]').firstElementChild;
     }
 
     var nextLink = nextElem.querySelector('a');
@@ -152,7 +155,7 @@ import './index.scss';
     var prevElem = parent.previousElementSibling;
 
     if (!prevElem) {
-      prevElem = parent.closest('[data-title]').lastElementChild;
+      prevElem = closest(parent, '[data-title]').lastElementChild;
     }
 
     var prevLink = prevElem.querySelector('a');
