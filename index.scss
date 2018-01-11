@@ -163,7 +163,7 @@ $principles-item-padding: 30%;
     grid-column: 1;
     grid-row: 1;
     transform: rotate(45deg);
-    background-image: linear-gradient(to right, transparent, $green);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
     text-align: right;
     padding-left: $principles-item-padding;
     &:before {
@@ -176,7 +176,7 @@ $principles-item-padding: 30%;
     grid-column: 3;
     grid-row: 1;
     transform: rotate(-45deg);
-    background-image: linear-gradient(to left, transparent, $green);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
     padding-right: $principles-item-padding;
   }
 
@@ -185,7 +185,7 @@ $principles-item-padding: 30%;
     grid-column: 3;
     grid-row: 3;
     transform: rotate(45deg);
-    background-image: linear-gradient(to left, transparent, $green);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
     padding-right: $principles-item-padding;
   }
 
@@ -194,7 +194,7 @@ $principles-item-padding: 30%;
     grid-column: 1;
     grid-row: 3;
     transform: rotate(-45deg);
-    background-image: linear-gradient(to right, transparent, $green);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
     text-align: right;
     padding-left: $principles-item-padding;
 
