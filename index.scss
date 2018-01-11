@@ -364,16 +364,14 @@ $principles-item-padding: 30%;
   grid-row: 2 / span 11;
   z-index: 9999;
   background-color: rgba(#000, 0.9);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr auto;
-  align-items: center;
   border-radius: 50%;
+  position: relative;
+  z-index: $z-index-modal;
 
   display: none;
 
   &.active {
-    display: grid;
+    display: flex;
   }
 
   &.modal-direction {
@@ -394,9 +392,11 @@ $principles-item-padding: 30%;
 
 .modal-body {
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
 }
 
 .modal-tag {
@@ -432,21 +432,34 @@ $principles-item-padding: 30%;
   color: $white;
 }
 
-.modal-prev {
+.modal-control-prev {
   padding-left: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-.modal-next {
+.modal-control-next {
   padding-right: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.modal-control-close {
+  padding-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .modal-close {
-  grid-row: 2;
-  grid-column: 2;
-  text-align: center;
-  padding-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .vision-bg {
