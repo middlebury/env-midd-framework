@@ -37,6 +37,8 @@ ul {
   text-decoration: none;
   font-size: 14px;
   pointer-events: auto;
+  position: relative;
+
   &:hover {
     text-decoration: underline;
   }
