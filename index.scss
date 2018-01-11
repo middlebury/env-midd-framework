@@ -17,17 +17,15 @@ $z-index-directions-border: 3;
 $z-index-directions-bg: 2;
 $z-index-vision-bg: 1;
 
-* {
+*,
+:before,
+:after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  font-family: whitney, verdana, arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  // -webkit-font-smoothing: antialiased;
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  margin: 0;
 }
 
 ul {
