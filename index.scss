@@ -130,7 +130,6 @@ $framework-width: 900px;
   display: grid;
   grid-template-columns: 1fr 10% 1fr;
   grid-template-rows: 1fr 10% 1fr;
-  align-items: center;
   pointer-events: none;
 }
 
@@ -146,6 +145,7 @@ $principles-item-padding: 30%;
   transform-origin: center;
   pointer-events: auto;
   position: relative;
+  align-self: center;
 
   &:before {
     content: '';
@@ -225,6 +225,7 @@ $principles-item-padding: 30%;
   a {
     pointer-events: all;
   }
+  align-self: center;
 
   &:nth-child(1) {
     grid-column: 2;
@@ -272,7 +273,6 @@ $principles-item-padding: 30%;
   grid-template-rows: repeat(4, 1fr);
   position: relative;
   z-index: $z-index-directions;
-  align-items: center;
   pointer-events: none;
 }
 
@@ -284,6 +284,7 @@ $principles-item-padding: 30%;
   a {
     pointer-events: all;
   }
+  align-self: center;
 
   &:nth-child(1) {
     grid-column: 2;
@@ -400,6 +401,7 @@ $principles-item-padding: 30%;
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
+  align-self: center;
 }
 
 .modal-tag {
