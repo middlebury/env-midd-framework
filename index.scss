@@ -98,8 +98,8 @@ $framework-width: 900px;
   align-self: center;
   position: relative;
   z-index: $z-index-mission;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   pointer-events: none;
 }
 
@@ -111,7 +111,7 @@ $framework-width: 900px;
 }
 
 .mission-text {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .mission-bg {
