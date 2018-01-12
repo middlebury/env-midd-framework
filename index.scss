@@ -65,6 +65,7 @@ body {
 .framework-page {
   display: grid;
   grid-template-columns: 900px 500px;
+  line-height: 1.5;
 }
 
 .framework-content {
@@ -128,7 +129,6 @@ $framework-width: 900px;
   grid-row: 3/span 9;
   position: relative;
   z-index: $z-index-principles;
-
   display: grid;
   grid-template-columns: 1fr 10% 1fr;
   grid-template-rows: 1fr 10% 1fr;
@@ -359,7 +359,6 @@ $framework-width: 900px;
 
 .legend-item-text {
   font-size: 14px;
-  line-height: 1.5;
 }
 
 .modal {
@@ -479,7 +478,6 @@ $framework-width: 900px;
   font-weight: normal;
   text-align: center;
   font-size: 18px;
-  line-height: 1.5;
   position: relative;
   margin-top: -20px;
   z-index: 10;
