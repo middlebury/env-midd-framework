@@ -458,6 +458,20 @@ $framework-width: 900px;
   margin-bottom: 3rem;
 }
 
+.modal-control {
+  a {
+    display: inline-block;
+    opacity: 0.75;
+    transition: opacity 1s, transform 0.5s;
+    padding: 5px;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+}
+
 .modal-control-prev {
   padding-left: 2rem;
   position: absolute;
