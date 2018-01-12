@@ -127,7 +127,7 @@ import closest from 'dom-closest';
   function handleItemClick(e) {
     e.preventDefault();
 
-    var elem = e.target;
+    var elem = e.currentTarget;
 
     openModal(elem);
   }
