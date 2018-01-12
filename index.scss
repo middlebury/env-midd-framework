@@ -474,9 +474,17 @@ $framework-width: 900px;
 }
 
 .vision-title {
+  color: $primary;
   font-weight: normal;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 
   strong {
     text-transform: uppercase;
