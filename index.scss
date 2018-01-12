@@ -376,6 +376,7 @@ $framework-width: 900px;
   &.active {
     .legend-item {
       opacity: 0.5;
+      transform: scale(0.99);
     }
   }
 }
@@ -385,13 +386,20 @@ $framework-width: 900px;
   transition: opacity 0.5s;
   display: flex;
   align-items: flex-start;
+  transition: transform 0.8s, opacity 1s;
 
   &.active {
     opacity: 1 !important;
+    transform: scale(1) !important;
+
+    .legend-item-icon {
+      transform: rotate(90deg);
+    }
   }
 }
 
 .legend-item-icon {
+  transition: transform 2s;
 }
 
 .legend-item-body {
