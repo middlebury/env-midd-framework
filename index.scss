@@ -213,14 +213,15 @@ $framework-width: 900px;
 
 .distinctions-item {
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
   align-self: center;
 
   span {
     background-color: $blue;
     display: inline-block;
+    padding: 3px;
   }
 
   &:nth-child(1) {
@@ -281,6 +282,7 @@ $framework-width: 900px;
   span {
     background-color: $sky;
     display: inline-block;
+    padding: 3px;
   }
 
   // top center
