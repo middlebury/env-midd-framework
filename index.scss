@@ -136,8 +136,6 @@ $framework-width: 900px;
   pointer-events: none;
 }
 
-$principles-item-padding: 30%;
-
 .principles-item {
   text-transform: uppercase;
   font-weight: 600;
@@ -166,7 +164,6 @@ $principles-item-padding: 30%;
     transform: rotate(45deg);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
     text-align: right;
-    padding-left: $principles-item-padding;
     &:before {
       left: 100%;
     }
@@ -178,7 +175,6 @@ $principles-item-padding: 30%;
     grid-row: 1;
     transform: rotate(-45deg);
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
-    padding-right: $principles-item-padding;
   }
 
   // bottom right
@@ -187,7 +183,6 @@ $principles-item-padding: 30%;
     grid-row: 3;
     transform: rotate(45deg);
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
-    padding-right: $principles-item-padding;
   }
 
   // bottom left
@@ -197,7 +192,6 @@ $principles-item-padding: 30%;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
     text-align: right;
-    padding-left: $principles-item-padding;
 
     &:before {
       left: 100%;
