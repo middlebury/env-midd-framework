@@ -3,6 +3,12 @@ import './index.scss';
 import closest from 'dom-closest';
 
 (function() {
+  function forEach(items, cb) {
+    for (var i = 0; i < items.length; i++) {
+      cb(items[i], i);
+    }
+  }
+
   // set up background hovers to highlight related explainer item
   var legend = document.querySelector('.legend');
   var zones = document.querySelectorAll('[data-zone]');
@@ -35,7 +41,7 @@ import closest from 'dom-closest';
     disableActiveLegendItem();
   }
 
-  [].forEach.call(zones, function(elem) {
+  forEach(zones, function(elem) {
     elem.addEventListener('mouseover', handleZoneMouseOver);
     elem.addEventListener('mouseout', handleZoneMouseOut);
   });
@@ -113,13 +119,13 @@ import closest from 'dom-closest';
       return;
     }
 
-    [].forEach.call(exampleElems, function(elem) {
+    forEach(exampleElems, function(elem) {
       elem.classList.add('active');
     });
   }
 
   function hideExamples() {
-    [].forEach.call(examples, function(item, i) {
+    forEach(examples, function(item, i) {
       item.classList.remove('active');
     });
   }
@@ -133,7 +139,7 @@ import closest from 'dom-closest';
   }
 
   // bind clickable items
-  [].forEach.call(items, function(item) {
+  forEach(items, function(item) {
     item.addEventListener('click', handleItemClick);
   });
 
