@@ -18,6 +18,21 @@ $z-index-directions-border: 3;
 $z-index-directions-bg: 2;
 $z-index-vision-bg: 1;
 
+@mixin bg-hover($color, $zone: '') {
+  transition: transform 1s, background-color 1s;
+
+  &:hover {
+    transform: scale(1.005);
+    background-color: darken($color, 5%);
+
+    @if $zone != '' {
+      ~ .#{$zone} span {
+        background-color: darken($color, 5%);
+      }
+    }
+  }
+}
+
 *,
 :before,
 :after {
@@ -128,6 +143,8 @@ $framework-width: 900px;
   grid-row: 6 / span 3;
   position: relative;
   z-index: $z-index-mission-bg;
+
+  @include bg-hover($primary);
 }
 
 .principles {
@@ -227,6 +244,7 @@ $framework-width: 900px;
     background-color: $blue;
     display: inline-block;
     padding: 3px;
+    transition: background-color 1s; // same as zone background transition
   }
 
   &:nth-child(1) {
@@ -253,6 +271,8 @@ $framework-width: 900px;
   border-radius: 100%;
   position: relative;
   z-index: $z-index-distinctions-bg;
+
+  @include bg-hover($blue, 'distinctions');
 }
 
 .distinctions-border {
@@ -288,6 +308,7 @@ $framework-width: 900px;
     background-color: $sky;
     display: inline-block;
     padding: 3px;
+    transition: background-color 1s; // same as zone background transition
   }
 
   // top center
@@ -343,6 +364,8 @@ $framework-width: 900px;
   position: relative;
   z-index: $z-index-directions-bg;
   border-radius: 50%;
+
+  @include bg-hover($sky, 'directions');
 }
 
 .legend {
@@ -517,6 +540,8 @@ $framework-width: 900px;
   grid-row: 1 / span 13;
   position: relative;
   z-index: $z-index-vision-bg;
+
+  @include bg-hover($pattens-blue);
 }
 
 .vision-title {
