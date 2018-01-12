@@ -500,9 +500,9 @@ $framework-width: 900px;
   color: $primary;
   font-weight: normal;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
-  margin-top: -20px;
+  margin-top: -35px;
   z-index: 10;
   max-width: 80%;
   margin-left: auto;
@@ -523,6 +523,8 @@ $framework-width: 900px;
   display: none;
   width: 50%;
   flex: 0 0 50%;
+  margin-left: auto;
+  margin-right: auto;
 
   &.active {
     display: block;
