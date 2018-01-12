@@ -286,6 +286,7 @@ $framework-width: 900px;
   &:nth-child(1) {
     grid-column: 2;
     grid-row: 1;
+    transform: translateY(-25%);
   }
   // top right
   &:nth-child(2) {
@@ -301,6 +302,7 @@ $framework-width: 900px;
   &:nth-child(4) {
     grid-column: 2;
     grid-row: 4;
+    transform: translateY(25%);
   }
   // bottom left
   &:nth-child(5) {
