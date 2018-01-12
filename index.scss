@@ -217,6 +217,11 @@ $framework-width: 900px;
   position: relative;
   align-self: center;
 
+  span {
+    background-color: $blue;
+    display: inline-block;
+  }
+
   &:nth-child(1) {
     grid-column: 2;
   }
@@ -271,6 +276,11 @@ $framework-width: 900px;
   padding-left: 3rem;
   padding-right: 3rem;
   align-self: center;
+
+  span {
+    background-color: $sky;
+    display: inline-block;
+  }
 
   &:nth-child(1) {
     grid-column: 2;
