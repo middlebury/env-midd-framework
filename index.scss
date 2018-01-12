@@ -283,7 +283,7 @@ $framework-width: 900px;
   position: relative;
   z-index: $z-index-distinctions-border;
   pointer-events: none;
-  // animation: spin 60s linear infinite;
+  animation: spin 120s linear infinite;
 }
 
 .directions {
@@ -353,8 +353,8 @@ $framework-width: 900px;
   position: relative;
   z-index: $z-index-directions-border;
   pointer-events: none;
-  // animation: spin 60s linear infinite;
-  // animation-direction: reverse;
+  animation: spin 120s linear infinite;
+  animation-direction: reverse;
 }
 
 .directions-bg {
