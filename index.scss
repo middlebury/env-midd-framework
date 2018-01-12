@@ -251,7 +251,7 @@ $framework-width: 900px;
 .distinctions-border {
   grid-column: 5 / span 5;
   grid-row: 5 / span 5;
-  border: 2px dotted rgba(white, 0.5);
+  border: 2px dotted rgba(white, 0.4);
   border-radius: 100%;
   position: relative;
   z-index: $z-index-distinctions-border;
@@ -311,7 +311,7 @@ $framework-width: 900px;
 .directions-border {
   grid-column: 3 / span 9;
   grid-row: 3 / span 9;
-  border: 2px dotted rgba(white, 0.5);
+  border: 2px dotted rgba(white, 0.4);
   border-radius: 100%;
   position: relative;
   z-index: $z-index-directions-border;
