@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   pointer-events: auto;
-  position: relative;
+  position: relative; // needed to make pointer events work in ie11
 
   &:hover {
     text-decoration: underline;
