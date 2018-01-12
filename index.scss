@@ -57,17 +57,14 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .framework-page {
   display: grid;
-  grid-template-columns: max-content 500px;
-  // grid-template-rows: 900px;
-  align-items: center;
-  grid-gap: 1rem;
+  grid-template-columns: 900px 500px;
 }
 
 .framework-content {
@@ -76,6 +73,7 @@ body {
 
 .framework-legend {
   grid-column: 2;
+  align-self: center;
 }
 
 $framework-width: 900px;
