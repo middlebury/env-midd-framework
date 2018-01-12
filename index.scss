@@ -161,7 +161,7 @@ $framework-width: 900px;
     grid-column: 1;
     grid-row: 1;
     transform: rotate(45deg);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
+    background-image: linear-gradient(to right, rgba(white, 0), $green);
     text-align: right;
     &:before {
       left: 100%;
@@ -173,7 +173,7 @@ $framework-width: 900px;
     grid-column: 3;
     grid-row: 1;
     transform: rotate(-45deg);
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
+    background-image: linear-gradient(to left, rgba(white, 0), $green);
   }
 
   // bottom right
@@ -181,7 +181,7 @@ $framework-width: 900px;
     grid-column: 3;
     grid-row: 3;
     transform: rotate(45deg);
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $green);
+    background-image: linear-gradient(to left, rgba(white, 0), $green);
   }
 
   // bottom left
@@ -189,7 +189,7 @@ $framework-width: 900px;
     grid-column: 1;
     grid-row: 3;
     transform: rotate(-45deg);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $green);
+    background-image: linear-gradient(to right, rgba(white, 0), $green);
     text-align: right;
 
     &:before {
