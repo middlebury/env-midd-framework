@@ -433,6 +433,7 @@ $framework-width: 900px;
 
 .modal-text {
   color: $white;
+  margin-bottom: 3rem;
 }
 
 .modal-control-prev {
@@ -491,4 +492,35 @@ $framework-width: 900px;
     letter-spacing: 2px;
     font-weight: 600;
   }
+}
+
+.examples {
+  display: flex;
+}
+
+.example {
+  display: none;
+  width: 50%;
+  flex: 0 0 50%;
+
+  &.active {
+    display: block;
+  }
+}
+
+.example-image {
+  margin-bottom: 0.5rem;
+}
+
+.example-title {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: $primary;
+}
+
+.example-text {
+  font-size: 14px;
 }

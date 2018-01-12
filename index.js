@@ -45,6 +45,7 @@ import closest from 'dom-closest';
 
   // set up item modals
   var items = document.querySelectorAll('.js-framework-item');
+  var examples = document.querySelectorAll('.example');
 
   var modal = document.querySelector('.framework .modal');
   var modalTag = modal.querySelector('.modal-tag');
@@ -65,6 +66,10 @@ import closest from 'dom-closest';
 
   function openModal(elem) {
     var values = getItemValues(elem);
+
+    hideExamples();
+
+    showExamples(elem);
 
     setModalContent(values.tag, values.title, values.text);
 
@@ -98,6 +103,25 @@ import closest from 'dom-closest';
       title: title,
       text: text
     };
+  }
+
+  function showExamples(elem) {
+    var selector = elem.getAttribute('data-examples');
+    var exampleElems = document.querySelectorAll(selector);
+
+    if (!exampleElems) {
+      return;
+    }
+
+    [].forEach.call(exampleElems, function(elem) {
+      elem.classList.add('active');
+    });
+  }
+
+  function hideExamples() {
+    [].forEach.call(examples, function(item, i) {
+      item.classList.remove('active');
+    });
   }
 
   function handleItemClick(e) {
