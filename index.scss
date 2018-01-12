@@ -364,11 +364,13 @@ $framework-width: 900px;
   font-weight: 600;
   color: $primary;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .legend-item-text {
   font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .modal {
