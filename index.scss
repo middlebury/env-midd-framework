@@ -63,9 +63,12 @@ body {
 }
 
 .framework-page {
-  display: grid;
-  grid-template-columns: 900px 500px;
   line-height: 1.5;
+
+  @media (min-width: 80em) {
+    display: grid;
+    grid-template-columns: 900px 500px;
+  }
 }
 
 .framework-content {
@@ -90,6 +93,8 @@ $framework-width: 900px;
   grid-template-rows: repeat(13, minmax(50px, 1fr));
   overflow: hidden;
   cursor: default;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mission {
@@ -341,6 +346,10 @@ $framework-width: 900px;
 }
 
 .legend {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   &.active {
     .legend-item {
       opacity: 0.5;
