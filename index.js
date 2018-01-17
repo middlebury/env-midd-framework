@@ -1,6 +1,6 @@
 import './index.scss';
 
-import closest from 'dom-closest';
+import './closest';
 
 (function() {
   // set up background hovers to highlight related explainer item
@@ -92,7 +92,7 @@ import closest from 'dom-closest';
   }
 
   function getItemValues(elem) {
-    var titleElem = closest(elem, '[data-title]');
+    var titleElem = elem.closest('[data-title]');
 
     var tag = titleElem.getAttribute('data-title');
     var title = elem.innerText;
@@ -152,7 +152,7 @@ import closest from 'dom-closest';
     var nextElem = parent.nextElementSibling;
 
     if (!nextElem) {
-      nextElem = closest(parent, '[data-title]').firstElementChild;
+      nextElem = parent.closest('[data-title]').firstElementChild;
     }
 
     var nextLink = nextElem.querySelector('a');
@@ -179,7 +179,7 @@ import closest from 'dom-closest';
     var prevElem = parent.previousElementSibling;
 
     if (!prevElem) {
-      prevElem = closest(parent, '[data-title]').lastElementChild;
+      prevElem = parent.closest('[data-title]').lastElementChild;
     }
 
     var prevLink = prevElem.querySelector('a');
