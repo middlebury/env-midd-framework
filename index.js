@@ -7,7 +7,7 @@ import './closest';
   var legend = document.querySelector('.legend');
   var zones = document.querySelectorAll('[data-zone]');
 
-  function disableActiveLegendItem() {
+  function disableLegendItem() {
     var activeItem = document.querySelector('.legend-item.active');
 
     if (activeItem) {
@@ -15,24 +15,28 @@ import './closest';
     }
   }
 
-  function handleZoneMouseOver(event) {
+  function enableLegendItem(zone) {
     legend.classList.add('active');
 
-    disableActiveLegendItem();
-
-    var elem = event.target;
-
-    var zone = elem.getAttribute('data-zone');
+    disableLegendItem();
 
     var target = document.querySelector('#legend-item-' + zone);
 
     target.classList.add('active');
   }
 
+  function handleZoneMouseOver(event) {
+    var elem = event.target;
+
+    var zone = elem.getAttribute('data-zone');
+
+    enableLegendItem(zone);
+  }
+
   function handleZoneMouseOut(event) {
     legend.classList.remove('active');
 
-    disableActiveLegendItem();
+    disableLegendItem();
   }
 
   [].forEach.call(zones, function(elem) {
@@ -72,6 +76,8 @@ import './closest';
     showExamples(elem);
 
     setModalContent(values.tag, values.title, values.text);
+
+    enableLegendItem(values.tag);
 
     elem.classList.add('active');
     modal.classList.add('active');
