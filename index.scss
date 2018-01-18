@@ -33,15 +33,53 @@ $z-index-vision-bg: 1;
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 *,
 :before,
 :after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Whitney SSm A', 'Whitney SSm B';
-  margin: 0;
+.site-inner,
+.wrap {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 1441px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.site-header > .wrap {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: 1441px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .framework ul {
@@ -53,22 +91,22 @@ body {
 .framework a {
   color: $white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   pointer-events: auto;
   position: relative; // needed to make pointer events work in ie11
 
   &:hover {
     text-decoration: underline;
+
+    span {
+      text-decoration: underline;
+    }
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -79,23 +117,29 @@ body {
 
 .framework-page {
   line-height: 1.5;
+  margin-bottom: 3rem;
 
   @media (min-width: 80em) {
     display: grid;
-    grid-template-columns: 900px 500px;
+    grid-template-columns: 800px 550px;
   }
 }
 
 .framework-content {
   grid-column: 1;
+  margin-bottom: 4rem;
 }
 
 .framework-legend {
   grid-column: 2;
   align-self: center;
+  @media (min-width: 80em) {
+    margin-left: 2rem;
+  }
 }
 
-$framework-width: 900px;
+$framework-width: 750px;
+$vision-width: 30px;
 
 .framework {
   width: $framework-width;
@@ -104,8 +148,8 @@ $framework-width: 900px;
   color: $white;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(13, minmax(50px, 1fr));
-  grid-template-rows: repeat(13, minmax(50px, 1fr));
+  grid-template-columns: $vision-width repeat(11, minmax(50px, 1fr)) $vision-width;
+  grid-template-rows: $vision-width repeat(11, minmax(50px, 1fr)) $vision-width;
   overflow: hidden;
   cursor: default;
   margin-left: auto;
@@ -133,7 +177,9 @@ $framework-width: 900px;
 }
 
 .mission-text {
-  font-size: 11px;
+  font-size: 10px;
+  color: $white;
+  margin: 0;
 }
 
 .mission-bg {
@@ -176,7 +222,7 @@ $framework-width: 900px;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 100%;
+    right: calc(100% - 1px);
   }
 
   // top left
@@ -186,8 +232,9 @@ $framework-width: 900px;
     transform: rotate(45deg);
     background-image: linear-gradient(to right, rgba(white, 0), $green);
     text-align: right;
+
     &:before {
-      left: 100%;
+      left: calc(100% - 1px);
     }
   }
 
@@ -197,6 +244,9 @@ $framework-width: 900px;
     grid-row: 1;
     transform: rotate(-45deg);
     background-image: linear-gradient(to left, rgba(white, 0), $green);
+
+    &:before {
+    }
   }
 
   // bottom right
@@ -205,8 +255,10 @@ $framework-width: 900px;
     grid-row: 3;
     transform: rotate(45deg);
     background-image: linear-gradient(to left, rgba(white, 0), $green);
-  }
 
+    &:before {
+    }
+  }
   // bottom left
   &:nth-child(4) {
     grid-column: 1;
@@ -216,7 +268,7 @@ $framework-width: 900px;
     text-align: right;
 
     &:before {
-      left: 100%;
+      left: calc(100% - 1px);
     }
   }
 }
@@ -300,9 +352,10 @@ $framework-width: 900px;
 
 .directions-item {
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   align-self: center;
+  animation: fadeIn 2s;
 
   span {
     background-color: $sky;
@@ -377,6 +430,7 @@ $framework-width: 900px;
     .legend-item {
       opacity: 0.5;
       transform: scale(0.99);
+      // filter: blur(3px);
     }
   }
 }
@@ -391,6 +445,7 @@ $framework-width: 900px;
   &.active {
     opacity: 1 !important;
     transform: scale(1) !important;
+    // filter: blur(0px) !important;
 
     .legend-item-icon {
       transform: rotate(90deg);
@@ -411,7 +466,7 @@ $framework-width: 900px;
 .legend-item-title {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: $primary;
   margin-top: 0;
@@ -439,13 +494,14 @@ $framework-width: 900px;
     display: flex;
   }
 
-  &.modal-direction {
+  &.modal-directions {
     background-color: rgba($sky, 0.95);
 
     .modal-title {
       color: $primary;
     }
   }
+
   &.modal-distinction {
     background-color: rgba($blue, 0.95);
 
@@ -462,6 +518,7 @@ $framework-width: 900px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
+  animation: fadeIn 1s;
 }
 
 .modal-tag {
@@ -548,6 +605,7 @@ $framework-width: 900px;
   grid-row: 1 / span 13;
   position: relative;
   z-index: $z-index-vision-bg;
+  border-radius: 50%;
 
   @include bg-hover($pattens-blue);
 }
@@ -556,9 +614,9 @@ $framework-width: 900px;
   color: $primary;
   font-weight: normal;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
-  margin-top: -35px;
+  margin-top: -20px;
   z-index: 10;
   max-width: 80%;
   margin-left: auto;
@@ -602,4 +660,5 @@ $framework-width: 900px;
 
 .example-text {
   font-size: 14px;
+  color: $white;
 }
