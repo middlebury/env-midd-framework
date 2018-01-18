@@ -18,6 +18,10 @@ $z-index-directions-border: 3;
 $z-index-directions-bg: 2;
 $z-index-vision-bg: 1;
 
+$framework-width: 750px;
+$vision-width: 30px;
+$legend-transition-delay: 0.3s;
+
 @mixin bg-hover($color, $zone: '') {
   transition: transform 1s, background-color 1s;
 
@@ -132,14 +136,7 @@ img {
 
 .framework-legend {
   grid-column: 2;
-  align-self: center;
-  @media (min-width: 80em) {
-    margin-left: 2rem;
-  }
 }
-
-$framework-width: 750px;
-$vision-width: 30px;
 
 .framework {
   width: $framework-width;
@@ -430,6 +427,7 @@ $vision-width: 30px;
     .legend-item {
       opacity: 0.5;
       transform: scale(0.99);
+      transition-delay: $legend-transition-delay;
       // filter: blur(3px);
     }
   }
@@ -445,16 +443,17 @@ $vision-width: 30px;
   &.active {
     opacity: 1 !important;
     transform: scale(1) !important;
-    // filter: blur(0px) !important;
-
-    .legend-item-icon {
-      transform: rotate(90deg);
-    }
+    transition-delay: $legend-transition-delay;
   }
 }
 
 .legend-item-icon {
   transition: transform 2s;
+
+  .legend-item.active & {
+    transform: rotate(90deg);
+    transition-delay: $legend-transition-delay;
+  }
 }
 
 .legend-item-body {
@@ -474,7 +473,7 @@ $vision-width: 30px;
 }
 
 .legend-item-text {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -502,7 +501,7 @@ $vision-width: 30px;
     }
   }
 
-  &.modal-distinction {
+  &.modal-distinctions {
     background-color: rgba($blue, 0.95);
 
     .modal-title {
@@ -517,13 +516,13 @@ $vision-width: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 500px;
   animation: fadeIn 1s;
 }
 
 .modal-tag {
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -531,7 +530,7 @@ $vision-width: 30px;
 }
 
 .modal-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -552,7 +551,8 @@ $vision-width: 30px;
 
 .modal-text {
   color: $white;
-  margin-bottom: 3rem;
+  font-size: 14px;
+  margin-bottom: 2rem;
 }
 
 .modal-control {
@@ -656,6 +656,7 @@ $vision-width: 30px;
   letter-spacing: 2px;
   font-weight: 600;
   color: $primary;
+  line-height: 1.2;
 }
 
 .example-text {
